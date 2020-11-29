@@ -1,0 +1,13 @@
+C:\P2_SI\PoupaFruta\bin\Debug\PoupaFruta.exe.config
+C:\P2_SI\PoupaFruta\bin\Debug\PoupaFruta.exe
+C:\P2_SI\PoupaFruta\bin\Debug\PoupaFruta.pdb
+C:\P2_SI\PoupaFruta\bin\Debug\PoupaFruta.xml
+C:\P2_SI\PoupaFruta\obj\Debug\PoupaFruta.vbprojAssemblyReference.cache
+C:\P2_SI\PoupaFruta\obj\Debug\PoupaFruta.Login.resources
+C:\P2_SI\PoupaFruta\obj\Debug\PoupaFruta.Resources.resources
+C:\P2_SI\PoupaFruta\obj\Debug\PoupaFruta.vbproj.GenerateResource.cache
+C:\P2_SI\PoupaFruta\obj\Debug\PoupaFruta.vbproj.CoreCompileInputs.cache
+C:\P2_SI\PoupaFruta\obj\Debug\PoupaFruta.exe
+C:\P2_SI\PoupaFruta\obj\Debug\PoupaFruta.xml
+C:\P2_SI\PoupaFruta\obj\Debug\PoupaFruta.pdb
+C:\P2_SI\PoupaFruta\obj\Debug\PoupaFruta.frm_cadastro_cliente.resources
