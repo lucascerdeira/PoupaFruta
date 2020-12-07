@@ -11,3 +11,20 @@ C:\P2_SI\PoupaFruta\obj\Debug\PoupaFruta.exe
 C:\P2_SI\PoupaFruta\obj\Debug\PoupaFruta.xml
 C:\P2_SI\PoupaFruta\obj\Debug\PoupaFruta.pdb
 C:\P2_SI\PoupaFruta\obj\Debug\PoupaFruta.frm_cadastro_cliente.resources
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\obj\Debug\PoupaFruta.vbprojAssemblyReference.cache
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\obj\Debug\PoupaFruta.vbproj.GenerateResource.cache
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\obj\Debug\PoupaFruta.vbproj.CoreCompileInputs.cache
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\obj\Debug\PolpaFruta.frm_cadastro_cliente_fisica.resources
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\obj\Debug\PolpaFruta.frm_cadastro_cliente_pj.resources
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\obj\Debug\PolpaFruta.frm_login.resources
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\obj\Debug\PolpaFruta.Resources.resources
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\obj\Debug\PolpaFruta.tela_inicio.resources
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\bin\Debug\PolpaFruta.exe.config
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\bin\Debug\PolpaFruta.exe
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\bin\Debug\PolpaFruta.pdb
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\bin\Debug\PolpaFruta.xml
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\obj\Debug\PolpaFruta.exe
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\obj\Debug\PolpaFruta.xml
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\obj\Debug\PolpaFruta.pdb
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\obj\Debug\PolpaFruta.frm_principal.resources
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\obj\Debug\PolpaFruta.frm_criar_usuario.resources
