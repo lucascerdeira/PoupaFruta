@@ -1,0 +1,76 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PolpaFruta
+</name>
+</assembly>
+<members>
+<member name="T:PolpaFruta.My.Resources.Resources">
+<summary>
+  Uma classe de recurso de tipo de alta segurança, para pesquisar cadeias de caracteres localizadas etc.
+</summary>
+</member>
+<member name="P:PolpaFruta.My.Resources.Resources.ResourceManager">
+<summary>
+  Retorna a instância de ResourceManager armazenada em cache usada por essa classe.
+</summary>
+</member>
+<member name="P:PolpaFruta.My.Resources.Resources.Culture">
+<summary>
+  Substitui a propriedade CurrentUICulture do thread atual para todas as
+  pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
+</summary>
+</member>
+<member name="P:PolpaFruta.My.Resources.Resources.add_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PolpaFruta.My.Resources.Resources.Backgroud_login">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PolpaFruta.My.Resources.Resources.kiwi_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Icon semelhante a (Ícone).
+</summary>
+</member>
+<member name="P:PolpaFruta.My.Resources.Resources.Logo_3">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PolpaFruta.My.Resources.Resources.Logo_4">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PolpaFruta.My.Resources.Resources.polpa_fruta_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PolpaFruta.My.Resources.Resources.polpa_fruta_icon1">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Icon semelhante a (Ícone).
+</summary>
+</member>
+<member name="P:PolpaFruta.My.Resources.Resources.products_list_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PolpaFruta.My.Resources.Resources.search_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PolpaFruta.My.Resources.Resources.user_business_add_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>
