@@ -22,3 +22,4 @@ D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\obj\Debu
 D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\obj\Debug\PolpaFruta.frm_cadastro_cliente.resources
 D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\bin\Debug\Resources\polpa-fruta-icon.png
 D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\bin\Debug\Resources\Icon1.ico
+D:\Andre\estudos\@EAD 2\Sistemas de informação\Trabalho n2\PoupaFruta\obj\Debug\PolpaFruta.frm_listar_compra.resources

@@ -1,28 +1,28 @@
 ﻿Imports System.Data.SqlClient
 Module usuarioModule
     Class User
-        Public _id As String
-        Public _nome As String
-        Public _usuario As String
-        Public _senha As String
-        Public _status As String
+        Public id As String
+        Public nome As String
+        Public usuario As String
+        Public senha As String
+        Public status As String
 
         Sub New(name As String, usuario As String, senha As String, Optional status As String = "ATIVADO")
-            _nome = name
-            _usuario = usuario
-            _senha = senha
-            _status = status
+            Me.nome = name
+            Me.usuario = usuario
+            Me.senha = senha
+            Me.status = status
             toUp()
         End Sub
         Sub toUp()
-            _nome = UCase(_nome)
-            _usuario = UCase(_usuario)
+            Me.nome = UCase(Me.nome)
+            Me.usuario = UCase(Me.usuario)
         End Sub
     End Class
 
     Public Function confirmLogin(username As String, senha As String)
         db_connect()
-        sqlCommand = New SqlCommand($"SELECT * FROM [usuarios] WHERE usuario = '{username}' AND senha = '{senha}'", db)
+        sqlCommand = New SqlCommand($"SELECT * FROM [usuarios] WHERE usuario = '{username.Replace(" ", "")}' AND senha = '{senha}'", db)
         sqlReader = sqlCommand.ExecuteReader
         Dim respUsuario As String = ""
         Dim respSenha As String = ""
@@ -64,14 +64,14 @@ Module usuarioModule
     End Function
 
     Public Function CreateUser(user As User)
-        Dim userAlreadyExists As Boolean = userExist(user._usuario)
+        Dim userAlreadyExists As Boolean = userExist(user.usuario)
 
         If userAlreadyExists = True Then
             Return False
         Else
-            Dim newUser = New User(user._nome, user._usuario, user._senha)
+            Dim newUser = New User(user.nome, user.usuario, user.senha)
 
-            Dim query As String = $"INSERT INTO [usuarios] ([nome], [usuario], [senha], [status]) VALUES ('{newUser._nome}', '{newUser._usuario}', '{newUser._senha}', '{newUser._status}')"
+            Dim query As String = $"INSERT INTO [usuarios] ([nome], [usuario], [senha], [status]) VALUES ('{newUser.nome}', '{newUser.usuario}', '{newUser.senha}', '{newUser.status}')"
 
             sqlCommand = New SqlCommand
             With sqlCommand

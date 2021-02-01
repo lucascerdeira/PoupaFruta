@@ -23,10 +23,9 @@ Partial Class frm_gerenciar_usuarios
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btn_editar = New System.Windows.Forms.Button()
         Me.lb_sair = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.txt_pesquisar = New System.Windows.Forms.TextBox()
         Me.data_usuarios = New System.Windows.Forms.DataGridView()
         Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.nome = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -34,10 +33,8 @@ Partial Class frm_gerenciar_usuarios
         Me.senha = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.status = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btn_editar = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.data_usuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -48,13 +45,24 @@ Partial Class frm_gerenciar_usuarios
         Me.Panel1.Controls.Add(Me.btn_editar)
         Me.Panel1.Controls.Add(Me.lb_sair)
         Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Controls.Add(Me.txt_pesquisar)
         Me.Panel1.Controls.Add(Me.data_usuarios)
         Me.Panel1.Location = New System.Drawing.Point(18, 12)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(751, 426)
         Me.Panel1.TabIndex = 1
+        '
+        'btn_editar
+        '
+        Me.btn_editar.BackColor = System.Drawing.Color.Navy
+        Me.btn_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_editar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_editar.ForeColor = System.Drawing.Color.White
+        Me.btn_editar.Location = New System.Drawing.Point(563, 21)
+        Me.btn_editar.Name = "btn_editar"
+        Me.btn_editar.Size = New System.Drawing.Size(105, 29)
+        Me.btn_editar.TabIndex = 8
+        Me.btn_editar.Text = "Editar"
+        Me.btn_editar.UseVisualStyleBackColor = False
         '
         'lb_sair
         '
@@ -62,7 +70,7 @@ Partial Class frm_gerenciar_usuarios
         Me.lb_sair.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lb_sair.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lb_sair.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lb_sair.Location = New System.Drawing.Point(694, 21)
+        Me.lb_sair.Location = New System.Drawing.Point(694, 26)
         Me.lb_sair.Name = "lb_sair"
         Me.lb_sair.Size = New System.Drawing.Size(40, 18)
         Me.lb_sair.TabIndex = 7
@@ -71,29 +79,11 @@ Partial Class frm_gerenciar_usuarios
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.PolpaFruta.My.Resources.Resources.Logo_3
-        Me.PictureBox3.Location = New System.Drawing.Point(16, 21)
+        Me.PictureBox3.Location = New System.Drawing.Point(16, 18)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(269, 50)
         Me.PictureBox3.TabIndex = 6
         Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.PolpaFruta.My.Resources.Resources.search_icon
-        Me.PictureBox2.Location = New System.Drawing.Point(561, 73)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 5
-        Me.PictureBox2.TabStop = False
-        '
-        'txt_pesquisar
-        '
-        Me.txt_pesquisar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_pesquisar.Location = New System.Drawing.Point(16, 77)
-        Me.txt_pesquisar.Name = "txt_pesquisar"
-        Me.txt_pesquisar.Size = New System.Drawing.Size(539, 26)
-        Me.txt_pesquisar.TabIndex = 4
         '
         'data_usuarios
         '
@@ -102,10 +92,10 @@ Partial Class frm_gerenciar_usuarios
         Me.data_usuarios.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.data_usuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.data_usuarios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.nome, Me.usuario, Me.senha, Me.status})
-        Me.data_usuarios.Location = New System.Drawing.Point(16, 109)
+        Me.data_usuarios.Location = New System.Drawing.Point(16, 77)
         Me.data_usuarios.Name = "data_usuarios"
         Me.data_usuarios.ReadOnly = True
-        Me.data_usuarios.Size = New System.Drawing.Size(718, 299)
+        Me.data_usuarios.Size = New System.Drawing.Size(718, 331)
         Me.data_usuarios.TabIndex = 0
         '
         'id
@@ -153,19 +143,6 @@ Partial Class frm_gerenciar_usuarios
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'btn_editar
-        '
-        Me.btn_editar.BackColor = System.Drawing.Color.Navy
-        Me.btn_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_editar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_editar.ForeColor = System.Drawing.Color.White
-        Me.btn_editar.Location = New System.Drawing.Point(629, 73)
-        Me.btn_editar.Name = "btn_editar"
-        Me.btn_editar.Size = New System.Drawing.Size(105, 29)
-        Me.btn_editar.TabIndex = 8
-        Me.btn_editar.Text = "Editar"
-        Me.btn_editar.UseVisualStyleBackColor = False
-        '
         'frm_gerenciar_usuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -181,7 +158,6 @@ Partial Class frm_gerenciar_usuarios
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.data_usuarios, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -192,8 +168,6 @@ Partial Class frm_gerenciar_usuarios
     Friend WithEvents Panel1 As Panel
     Friend WithEvents data_usuarios As DataGridView
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents txt_pesquisar As TextBox
     Friend WithEvents lb_sair As Label
     Friend WithEvents id As DataGridViewTextBoxColumn
     Friend WithEvents nome As DataGridViewTextBoxColumn

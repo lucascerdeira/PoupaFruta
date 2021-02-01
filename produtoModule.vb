@@ -1,21 +1,21 @@
 ﻿Imports System.Data.SqlClient
 Module produtoModule
     Class Produto
-        Public ReadOnly _id As String
-        Public _nome As String
-        Public _descricao As String
-        Public _preco As String
+        Public ReadOnly id As String
+        Public nome As String
+        Public descricao As String
+        Public preco As String
 
         Sub New(nome As String, descricao As String, preco As String)
-            _nome = nome
-            _descricao = descricao
-            _preco = preco
+            Me.nome = nome
+            Me.descricao = descricao
+            Me.preco = preco
             toUp()
         End Sub
 
         Sub toUp()
-            _nome = UCase(_nome)
-            _descricao = UCase(_descricao)
+            Me.nome = UCase(Me.nome)
+            Me.descricao = UCase(Me.descricao)
         End Sub
     End Class
 
@@ -37,10 +37,10 @@ Module produtoModule
     End Function
 
     Public Function createProduct(produto As Produto)
-        Dim productAlreadyExist As Boolean = productExist(produto._nome)
+        Dim productAlreadyExist As Boolean = productExist(produto.nome)
 
         If productAlreadyExist = False Then
-            Dim query As String = $"INSERT INTO [produtos] ([nome], [descricao], [preco]) VALUES ('{produto._nome}', '{produto._descricao}', '{produto._preco}')"
+            Dim query As String = $"INSERT INTO [produtos] ([nome], [descricao], [preco]) VALUES ('{produto.nome}', '{produto.descricao}', '{produto.preco}')"
 
             sqlCommand = New SqlCommand
             With sqlCommand

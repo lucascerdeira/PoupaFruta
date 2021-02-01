@@ -1,7 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class frm_lista_clientes
     Dim dataTable As New DataTable
-    Dim builder As New SqlCommandBuilder
     Dim sqlAdapter As SqlDataAdapter
     Private Sub lb_sair_Click(sender As Object, e As EventArgs) Handles lb_sair.Click
         Me.Close()
@@ -20,19 +19,24 @@ Public Class frm_lista_clientes
             btn_editar.Text = "Confirmar Mudanças"
             data_clientes.Columns(4).ReadOnly = True
         Else
-            sqlCommand = New SqlCommand
-            sqlCommand.Connection = db
-            sqlCommand.CommandType = CommandType.Text
-            For Each item As DataGridViewRow In data_clientes.Rows
-                sqlCommand.CommandText = $"UPDATE [clientes] SET [nome] = '{UCase(item.Cells(1).Value)}', [email] = '{UCase(item.Cells(2).Value)}', [telefone] = '{item.Cells(3).Value}', [cnpj] = '{item.Cells(4).Value}', [cep] = '{item.Cells(5).Value}', [municipio] = '{UCase(item.Cells(6).Value)}', [bairro] = '{UCase(item.Cells(7).Value)}', [numero] = '{item.Cells(8).Value}', [complemento] = '{UCase(item.Cells(9).Value)}', [uf] = '{UCase(item.Cells(10).Value)}' WHERE [cnpj] = '{item.Cells(4).Value}'"
+            Try
+                sqlCommand = New SqlCommand
+                sqlCommand.Connection = db
+                sqlCommand.CommandType = CommandType.Text
+                For Each item As DataGridViewRow In data_clientes.Rows
+                    sqlCommand.CommandText = $"UPDATE [clientes] SET [nome] = '{UCase(item.Cells(1).Value)}', [email] = '{UCase(item.Cells(2).Value)}', [telefone] = '{item.Cells(3).Value}', [cnpj] = '{item.Cells(4).Value}', [cep] = '{item.Cells(5).Value}', [rua] = '{UCase(item.Cells(6).Value)}', [municipio] = '{UCase(item.Cells(7).Value)}', [bairro] = '{UCase(item.Cells(8).Value)}', [numero] = '{item.Cells(9).Value}', [complemento] = '{item.Cells(10).Value}', [uf] = '{UCase(item.Cells(11).Value)}' WHERE [cnpj] = '{item.Cells(4).Value}'"
 
-                sqlCommand.ExecuteNonQuery()
-            Next
+                    sqlCommand.ExecuteNonQuery()
+                Next
+            Catch ex As Exception
+                sqlCommand.Dispose()
+            End Try
 
             data_clientes.Columns(0).Visible = True
             data_clientes.Columns(9).Width = data_clientes.Columns(9).Width - 20
             data_clientes.ReadOnly = True
             btn_editar.Text = "Editar Dados"
+            sqlCommand.Dispose()
             bind()
         End If
     End Sub
@@ -64,5 +68,7 @@ Public Class frm_lista_clientes
         sqlAdapter.Fill(dataTable)
 
         data_clientes.DataSource = dataTable
+        sqlAdapter.Dispose()
+
     End Sub
 End Class

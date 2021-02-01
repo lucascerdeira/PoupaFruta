@@ -32,6 +32,7 @@ Partial Class frm_cadastro_cliente
         Dim Label9 As System.Windows.Forms.Label
         Dim Label2 As System.Windows.Forms.Label
         Dim Label1 As System.Windows.Forms.Label
+        Dim Label11 As System.Windows.Forms.Label
         Me.txt_email = New System.Windows.Forms.TextBox()
         Me.txt_telefone = New System.Windows.Forms.MaskedTextBox()
         Me.btn_gravar = New System.Windows.Forms.Button()
@@ -44,6 +45,7 @@ Partial Class frm_cadastro_cliente
         Me.txt_nome = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.txt_rua = New System.Windows.Forms.TextBox()
         Me.txt_uf = New System.Windows.Forms.MaskedTextBox()
         Me.lb_sair = New System.Windows.Forms.Label()
         Label3 = New System.Windows.Forms.Label()
@@ -56,6 +58,7 @@ Partial Class frm_cadastro_cliente
         Label9 = New System.Windows.Forms.Label()
         Label2 = New System.Windows.Forms.Label()
         Label1 = New System.Windows.Forms.Label()
+        Label11 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -66,7 +69,7 @@ Partial Class frm_cadastro_cliente
         Label3.BackColor = System.Drawing.Color.White
         Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Label3.Location = New System.Drawing.Point(266, 117)
+        Label3.Location = New System.Drawing.Point(278, 117)
         Label3.Name = "Label3"
         Label3.Size = New System.Drawing.Size(42, 15)
         Label3.TabIndex = 64
@@ -102,7 +105,7 @@ Partial Class frm_cadastro_cliente
         Label5.BackColor = System.Drawing.Color.White
         Label5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Label5.Location = New System.Drawing.Point(26, 202)
+        Label5.Location = New System.Drawing.Point(26, 247)
         Label5.Name = "Label5"
         Label5.Size = New System.Drawing.Size(61, 15)
         Label5.TabIndex = 65
@@ -114,7 +117,7 @@ Partial Class frm_cadastro_cliente
         Label8.BackColor = System.Drawing.Color.White
         Label8.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Label8.Location = New System.Drawing.Point(275, 202)
+        Label8.Location = New System.Drawing.Point(290, 247)
         Label8.Name = "Label8"
         Label8.Size = New System.Drawing.Size(70, 15)
         Label8.TabIndex = 70
@@ -126,7 +129,7 @@ Partial Class frm_cadastro_cliente
         Label7.BackColor = System.Drawing.Color.White
         Label7.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Label7.Location = New System.Drawing.Point(291, 245)
+        Label7.Location = New System.Drawing.Point(306, 290)
         Label7.Name = "Label7"
         Label7.Size = New System.Drawing.Size(29, 15)
         Label7.TabIndex = 69
@@ -138,7 +141,7 @@ Partial Class frm_cadastro_cliente
         Label6.BackColor = System.Drawing.Color.White
         Label6.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Label6.Location = New System.Drawing.Point(26, 161)
+        Label6.Location = New System.Drawing.Point(26, 206)
         Label6.Name = "Label6"
         Label6.Size = New System.Drawing.Size(83, 15)
         Label6.TabIndex = 68
@@ -150,7 +153,7 @@ Partial Class frm_cadastro_cliente
         Label9.BackColor = System.Drawing.Color.White
         Label9.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Label9.Location = New System.Drawing.Point(28, 247)
+        Label9.Location = New System.Drawing.Point(28, 292)
         Label9.Name = "Label9"
         Label9.Size = New System.Drawing.Size(119, 15)
         Label9.TabIndex = 73
@@ -181,21 +184,33 @@ Partial Class frm_cadastro_cliente
         Label1.Text = "Nome:"
         AddHandler Label1.Click, AddressOf Me.lb_sair_Click
         '
+        'Label11
+        '
+        Label11.AutoSize = True
+        Label11.BackColor = System.Drawing.Color.White
+        Label11.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Label11.Location = New System.Drawing.Point(28, 161)
+        Label11.Name = "Label11"
+        Label11.Size = New System.Drawing.Size(39, 15)
+        Label11.TabIndex = 87
+        Label11.Text = "RUA:"
+        '
         'txt_email
         '
         Me.txt_email.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_email.Location = New System.Drawing.Point(29, 91)
         Me.txt_email.Name = "txt_email"
-        Me.txt_email.Size = New System.Drawing.Size(316, 23)
+        Me.txt_email.Size = New System.Drawing.Size(326, 23)
         Me.txt_email.TabIndex = 2
         '
         'txt_telefone
         '
         Me.txt_telefone.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_telefone.Location = New System.Drawing.Point(31, 135)
+        Me.txt_telefone.Location = New System.Drawing.Point(29, 135)
         Me.txt_telefone.Mask = "(99) 0000-0000"
         Me.txt_telefone.Name = "txt_telefone"
-        Me.txt_telefone.Size = New System.Drawing.Size(103, 23)
+        Me.txt_telefone.Size = New System.Drawing.Size(105, 23)
         Me.txt_telefone.TabIndex = 3
         '
         'btn_gravar
@@ -204,7 +219,7 @@ Partial Class frm_cadastro_cliente
         Me.btn_gravar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_gravar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_gravar.ForeColor = System.Drawing.Color.White
-        Me.btn_gravar.Location = New System.Drawing.Point(202, 315)
+        Me.btn_gravar.Location = New System.Drawing.Point(202, 356)
         Me.btn_gravar.Name = "btn_gravar"
         Me.btn_gravar.Size = New System.Drawing.Size(143, 25)
         Me.btn_gravar.TabIndex = 11
@@ -214,7 +229,7 @@ Partial Class frm_cadastro_cliente
         'txt_cep
         '
         Me.txt_cep.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_cep.Location = New System.Drawing.Point(269, 135)
+        Me.txt_cep.Location = New System.Drawing.Point(279, 135)
         Me.txt_cep.Mask = "00000\-000"
         Me.txt_cep.Name = "txt_cep"
         Me.txt_cep.Size = New System.Drawing.Size(76, 23)
@@ -223,17 +238,17 @@ Partial Class frm_cadastro_cliente
         'txt_bairro
         '
         Me.txt_bairro.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_bairro.Location = New System.Drawing.Point(29, 219)
+        Me.txt_bairro.Location = New System.Drawing.Point(29, 264)
         Me.txt_bairro.Name = "txt_bairro"
-        Me.txt_bairro.Size = New System.Drawing.Size(244, 23)
+        Me.txt_bairro.Size = New System.Drawing.Size(259, 23)
         Me.txt_bairro.TabIndex = 7
         '
         'txt_municipio
         '
         Me.txt_municipio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_municipio.Location = New System.Drawing.Point(29, 179)
+        Me.txt_municipio.Location = New System.Drawing.Point(29, 224)
         Me.txt_municipio.Name = "txt_municipio"
-        Me.txt_municipio.Size = New System.Drawing.Size(316, 23)
+        Me.txt_municipio.Size = New System.Drawing.Size(326, 23)
         Me.txt_municipio.TabIndex = 6
         '
         'txt_cnpj
@@ -242,23 +257,23 @@ Partial Class frm_cadastro_cliente
         Me.txt_cnpj.Location = New System.Drawing.Point(140, 135)
         Me.txt_cnpj.Mask = "00\.000\.000/0000\-00"
         Me.txt_cnpj.Name = "txt_cnpj"
-        Me.txt_cnpj.Size = New System.Drawing.Size(123, 23)
+        Me.txt_cnpj.Size = New System.Drawing.Size(133, 23)
         Me.txt_cnpj.TabIndex = 4
         '
         'txt_complemento
         '
         Me.txt_complemento.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_complemento.Location = New System.Drawing.Point(29, 263)
+        Me.txt_complemento.Location = New System.Drawing.Point(29, 308)
         Me.txt_complemento.Name = "txt_complemento"
-        Me.txt_complemento.Size = New System.Drawing.Size(259, 23)
+        Me.txt_complemento.Size = New System.Drawing.Size(274, 23)
         Me.txt_complemento.TabIndex = 9
         '
         'txt_numero
         '
         Me.txt_numero.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_numero.Location = New System.Drawing.Point(279, 219)
+        Me.txt_numero.Location = New System.Drawing.Point(294, 264)
         Me.txt_numero.Name = "txt_numero"
-        Me.txt_numero.Size = New System.Drawing.Size(66, 23)
+        Me.txt_numero.Size = New System.Drawing.Size(61, 23)
         Me.txt_numero.TabIndex = 8
         '
         'txt_nome
@@ -266,7 +281,7 @@ Partial Class frm_cadastro_cliente
         Me.txt_nome.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_nome.Location = New System.Drawing.Point(29, 48)
         Me.txt_nome.Name = "txt_nome"
-        Me.txt_nome.Size = New System.Drawing.Size(316, 23)
+        Me.txt_nome.Size = New System.Drawing.Size(326, 23)
         Me.txt_nome.TabIndex = 1
         '
         'PictureBox1
@@ -282,6 +297,8 @@ Partial Class frm_cadastro_cliente
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Label11)
+        Me.Panel1.Controls.Add(Me.txt_rua)
         Me.Panel1.Controls.Add(Me.txt_uf)
         Me.Panel1.Controls.Add(Me.lb_sair)
         Me.Panel1.Controls.Add(Me.txt_email)
@@ -304,18 +321,26 @@ Partial Class frm_cadastro_cliente
         Me.Panel1.Controls.Add(Label8)
         Me.Panel1.Controls.Add(Label5)
         Me.Panel1.Controls.Add(Me.txt_complemento)
-        Me.Panel1.Location = New System.Drawing.Point(27, 28)
+        Me.Panel1.Location = New System.Drawing.Point(20, 26)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(370, 371)
+        Me.Panel1.Size = New System.Drawing.Size(385, 404)
         Me.Panel1.TabIndex = 84
+        '
+        'txt_rua
+        '
+        Me.txt_rua.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_rua.Location = New System.Drawing.Point(29, 179)
+        Me.txt_rua.Name = "txt_rua"
+        Me.txt_rua.Size = New System.Drawing.Size(326, 23)
+        Me.txt_rua.TabIndex = 86
         '
         'txt_uf
         '
         Me.txt_uf.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_uf.Location = New System.Drawing.Point(294, 263)
+        Me.txt_uf.Location = New System.Drawing.Point(309, 308)
         Me.txt_uf.Mask = "aa"
         Me.txt_uf.Name = "txt_uf"
-        Me.txt_uf.Size = New System.Drawing.Size(51, 23)
+        Me.txt_uf.Size = New System.Drawing.Size(46, 23)
         Me.txt_uf.TabIndex = 10
         Me.txt_uf.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -325,7 +350,7 @@ Partial Class frm_cadastro_cliente
         Me.lb_sair.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lb_sair.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lb_sair.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lb_sair.Location = New System.Drawing.Point(137, 317)
+        Me.lb_sair.Location = New System.Drawing.Point(137, 358)
         Me.lb_sair.Name = "lb_sair"
         Me.lb_sair.Size = New System.Drawing.Size(40, 18)
         Me.lb_sair.TabIndex = 85
@@ -335,7 +360,7 @@ Partial Class frm_cadastro_cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(425, 426)
+        Me.ClientSize = New System.Drawing.Size(425, 456)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -364,4 +389,5 @@ Partial Class frm_cadastro_cliente
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lb_sair As Label
     Friend WithEvents txt_uf As MaskedTextBox
+    Friend WithEvents txt_rua As TextBox
 End Class

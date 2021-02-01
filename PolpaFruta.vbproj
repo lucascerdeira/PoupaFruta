@@ -130,6 +130,12 @@
     <Compile Include="frm_lista_clientes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_lista_pedidos.Designer.vb">
+      <DependentUpon>frm_lista_pedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_lista_pedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_lista_produtos.Designer.vb">
       <DependentUpon>frm_lista_produtos.vb</DependentUpon>
     </Compile>
@@ -146,12 +152,6 @@
       <DependentUpon>frm_principal.vb</DependentUpon>
     </Compile>
     <Compile Include="frm_principal.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_lista_pedidos.Designer.vb">
-      <DependentUpon>frm_lista_pedidos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frm_lista_pedidos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="listar_compra.Designer.vb">
@@ -176,6 +176,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="pedidoModule.vb" />
     <Compile Include="produtoModule.vb" />
     <Compile Include="Resources\tela_inicio.Designer.vb">
       <DependentUpon>tela_inicio.vb</DependentUpon>
@@ -204,6 +205,9 @@
     <EmbeddedResource Include="frm_lista_clientes.resx">
       <DependentUpon>frm_lista_clientes.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_lista_pedidos.resx">
+      <DependentUpon>frm_lista_pedidos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_lista_produtos.resx">
       <DependentUpon>frm_lista_produtos.vb</DependentUpon>
     </EmbeddedResource>
@@ -212,9 +216,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_principal.resx">
       <DependentUpon>frm_principal.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_lista_pedidos.resx">
-      <DependentUpon>frm_lista_pedidos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="listar_compra.resx">
       <DependentUpon>listar_compra.vb</DependentUpon>
@@ -298,6 +299,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\kiwi-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-plus-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

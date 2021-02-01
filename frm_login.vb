@@ -4,7 +4,7 @@
     End Sub
 
     Private Sub btn_confirmar_Click(sender As Object, e As EventArgs) Handles btn_confirmar.Click
-        If UCase(txt_usuario.Text) = "ADMIN" And txt_senha.Text = "admin" Then
+        If UCase(txt_usuario.Text).Replace(" ", "") = "ADMIN" And txt_senha.Text = "admin" Then
             adm = True
             usuarioLogado = "ADMIN"
             frm_principal.Show()
