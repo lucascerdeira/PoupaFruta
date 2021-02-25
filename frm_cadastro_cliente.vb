@@ -1,4 +1,9 @@
-﻿Public Class frm_cadastro_cliente
+﻿Imports System.Data.SqlClient
+Public Class frm_cadastro_cliente
+    Dim dataTable As New DataTable
+    Dim sqlReader As SqlDataReader
+    Dim sqlCommand As SqlCommand
+    Dim sqlAdapter As SqlDataAdapter
     Private Sub lb_sair_Click(sender As Object, e As EventArgs) Handles lb_sair.Click
         Me.Close()
     End Sub
@@ -11,7 +16,7 @@
 
             MsgBox("Preencha corretamente todos os campos!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "ATENÇÃO")
         Else
-            Dim newCustomer As New Cliente(txt_nome.Text, txt_email.Text, txt_telefone.Text, txt_cnpj.Text, txt_cep.Text, txt_municipio.Text, txt_bairro.Text, txt_numero.Text, txt_complemento.Text, txt_uf.Text)
+            Dim newCustomer As New Cliente(txt_nome.Text, txt_email.Text, txt_telefone.Text, txt_cnpj.Text, txt_cep.Text, txt_rua.Text, txt_municipio.Text, txt_bairro.Text, txt_numero.Text, txt_complemento.Text, txt_uf.Text)
 
             Dim resp As Boolean = createCustomer(newCustomer)
 
@@ -53,5 +58,28 @@
 
     Private Sub txt_uf_MouseClick(sender As Object, e As MouseEventArgs) Handles txt_uf.MouseClick
         txt_uf.SelectionStart = txt_uf.Text.Length - txt_uf.Text.Length
+    End Sub
+
+    Private Sub txt_cep_Validated(sender As Object, e As EventArgs) Handles txt_cep.Validated
+        Try
+            sqlCommand = New SqlCommand
+            With sqlCommand
+                .Connection = db
+                .CommandType = CommandType.Text
+                .CommandText = $"SELECT * FROM tb_cep WHERE [CEP] = '{txt_cep.Text}'"
+            End With
+            sqlReader = sqlCommand.ExecuteReader
+            sqlReader.Read()
+            txt_rua.Text = sqlReader.Item("ENDERECO")
+            txt_municipio.Text = sqlReader.Item("CIDADE")
+            txt_bairro.Text = sqlReader.Item("BAIRRO")
+            txt_uf.Text = sqlReader.Item("UF")
+            sqlReader.Close()
+            sqlCommand.Dispose()
+        Catch ex As Exception
+            sqlReader.Close()
+            sqlCommand.Dispose()
+        End Try
+
     End Sub
 End Class

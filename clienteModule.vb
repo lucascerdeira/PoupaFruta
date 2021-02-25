@@ -1,38 +1,42 @@
 ﻿Imports System.Data.SqlClient
 Module clienteModule
     Class Cliente
-        Public _nome As String
-        Public _email As String
-        Public _telefone As String
-        Public _cnpj As String
-        Public _cep As String
-        Public _municipio As String
-        Public _bairro As String
-        Public _numero As String
-        Public _complemento As String
-        Public _uf As String
+        Public nome As String
+        Public email As String
+        Public telefone As String
+        Public cnpj As String
+        Public cep As String
+        Public rua As String
+        Public municipio As String
+        Public bairro As String
+        Public numero As String
+        Public complemento As String
+        Public uf As String
 
-        Sub New(nome As String, email As String, telefone As String, cnpj As String, cep As String, municipio As String, bairro As String,
+        Sub New(nome As String, email As String, telefone As String, cnpj As String, cep As String, rua As String, municipio As String, bairro As String,
                 numero As String, complemento As String, uf As String)
-            _nome = nome
-            _email = email
-            _telefone = telefone
-            _cnpj = cnpj
-            _cep = cep
-            _municipio = municipio
-            _bairro = bairro
-            _numero = numero
-            _complemento = complemento
-            _uf = uf
+            Me.nome = nome
+            Me.email = email
+            Me.telefone = telefone
+            Me.cnpj = cnpj
+            Me.cep = cep
+            Me.rua = rua
+            Me.municipio = municipio
+            Me.bairro = bairro
+            Me.numero = numero
+            Me.complemento = complemento
+            Me.uf = uf
             toUp()
         End Sub
 
         Sub toUp()
-            _nome = UCase(_nome)
-            _email = UCase(_email)
-            _municipio = UCase(_municipio)
-            _bairro = UCase(_bairro)
-            _complemento = UCase(_complemento)
+            Me.nome = UCase(Me.nome)
+            Me.email = UCase(Me.email)
+            Me.municipio = UCase(Me.municipio)
+            Me.bairro = UCase(Me.bairro)
+            Me.complemento = UCase(Me.complemento)
+            Me.uf = UCase(Me.uf)
+            Me.rua = UCase(Me.rua)
         End Sub
     End Class
 
@@ -54,10 +58,10 @@ Module clienteModule
     End Function
 
     Public Function createCustomer(cliente As Cliente)
-        Dim customerAlreadyExist As Boolean = customerExist(cliente._cnpj)
+        Dim customerAlreadyExist As Boolean = customerExist(cliente.cnpj)
 
         If customerAlreadyExist = False Then
-            Dim query As String = $"INSERT INTO [clientes] VALUES ('{cliente._nome}', '{cliente._email}', '{cliente._telefone}', '{cliente._cnpj}', '{cliente._cep}', '{cliente._municipio}', '{cliente._bairro}', '{cliente._numero}', '{cliente._complemento}', '{cliente._uf}');"
+            Dim query As String = $"INSERT INTO [clientes] VALUES ('{cliente.nome}', '{cliente.email}', '{cliente.telefone}', '{cliente.cnpj}', '{cliente.cep}', '{cliente.rua}', '{cliente.municipio}', '{cliente.bairro}', '{cliente.numero}', '{cliente.complemento}', '{cliente.uf}');"
 
             sqlCommand = New SqlCommand
             With sqlCommand

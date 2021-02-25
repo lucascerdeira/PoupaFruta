@@ -67,6 +67,11 @@ PolpaFruta
   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:PolpaFruta.My.Resources.Resources.text_plus_icon">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PolpaFruta.My.Resources.Resources.user_business_add_icon">
 <summary>
   Consulta um recurso localizado do tipo System.Drawing.Bitmap.

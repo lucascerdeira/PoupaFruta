@@ -84,7 +84,7 @@ Partial Class frm_cadastro_pedidos
         Me.btn_confirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_confirmar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_confirmar.ForeColor = System.Drawing.Color.White
-        Me.btn_confirmar.Location = New System.Drawing.Point(378, 492)
+        Me.btn_confirmar.Location = New System.Drawing.Point(355, 492)
         Me.btn_confirmar.Name = "btn_confirmar"
         Me.btn_confirmar.Size = New System.Drawing.Size(106, 33)
         Me.btn_confirmar.TabIndex = 13
@@ -97,7 +97,7 @@ Partial Class frm_cadastro_pedidos
         Me.lb_sair.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lb_sair.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lb_sair.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lb_sair.Location = New System.Drawing.Point(313, 500)
+        Me.lb_sair.Location = New System.Drawing.Point(297, 500)
         Me.lb_sair.Name = "lb_sair"
         Me.lb_sair.Size = New System.Drawing.Size(40, 18)
         Me.lb_sair.TabIndex = 12
@@ -106,9 +106,9 @@ Partial Class frm_cadastro_pedidos
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.Navy
-        Me.Panel3.Location = New System.Drawing.Point(592, 517)
+        Me.Panel3.Location = New System.Drawing.Point(533, 517)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(83, 1)
+        Me.Panel3.Size = New System.Drawing.Size(140, 1)
         Me.Panel3.TabIndex = 11
         '
         'GroupBox1
@@ -135,21 +135,20 @@ Partial Class frm_cadastro_pedidos
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.Navy
-        Me.Panel4.Location = New System.Drawing.Point(458, 120)
+        Me.Panel4.Location = New System.Drawing.Point(446, 120)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(65, 1)
+        Me.Panel4.Size = New System.Drawing.Size(85, 1)
         Me.Panel4.TabIndex = 11
         '
         'lb_subtotal
         '
         Me.lb_subtotal.AutoSize = True
         Me.lb_subtotal.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_subtotal.Location = New System.Drawing.Point(465, 101)
+        Me.lb_subtotal.Location = New System.Drawing.Point(443, 99)
         Me.lb_subtotal.Name = "lb_subtotal"
-        Me.lb_subtotal.Size = New System.Drawing.Size(53, 18)
+        Me.lb_subtotal.Size = New System.Drawing.Size(69, 18)
         Me.lb_subtotal.TabIndex = 15
-        Me.lb_subtotal.Text = "00.00"
-        Me.lb_subtotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lb_subtotal.Text = "R$ 0,00"
         '
         'Label4
         '
@@ -176,10 +175,10 @@ Partial Class frm_cadastro_pedidos
         Me.btn_add.AccessibleDescription = ""
         Me.btn_add.AccessibleName = ""
         Me.btn_add.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_add.Image = Global.PolpaFruta.My.Resources.Resources.add_icon
-        Me.btn_add.Location = New System.Drawing.Point(542, 71)
+        Me.btn_add.Image = Global.PolpaFruta.My.Resources.Resources.text_plus_icon
+        Me.btn_add.Location = New System.Drawing.Point(551, 83)
         Me.btn_add.Name = "btn_add"
-        Me.btn_add.Size = New System.Drawing.Size(50, 50)
+        Me.btn_add.Size = New System.Drawing.Size(40, 40)
         Me.btn_add.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.btn_add.TabIndex = 11
         Me.btn_add.TabStop = False
@@ -187,7 +186,7 @@ Partial Class frm_cadastro_pedidos
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Navy
-        Me.Panel2.Location = New System.Drawing.Point(357, 120)
+        Me.Panel2.Location = New System.Drawing.Point(349, 120)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(83, 1)
         Me.Panel2.TabIndex = 10
@@ -195,7 +194,7 @@ Partial Class frm_cadastro_pedidos
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(354, 72)
+        Me.Label3.Location = New System.Drawing.Point(346, 72)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(86, 15)
         Me.Label3.TabIndex = 9
@@ -213,10 +212,11 @@ Partial Class frm_cadastro_pedidos
         'txt_qtd
         '
         Me.txt_qtd.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txt_qtd.Font = New System.Drawing.Font("Arial Rounded MT Bold", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_qtd.Location = New System.Drawing.Point(357, 90)
+        Me.txt_qtd.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_qtd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.txt_qtd.Location = New System.Drawing.Point(349, 90)
         Me.txt_qtd.Name = "txt_qtd"
-        Me.txt_qtd.Size = New System.Drawing.Size(83, 32)
+        Me.txt_qtd.Size = New System.Drawing.Size(83, 28)
         Me.txt_qtd.TabIndex = 4
         Me.txt_qtd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -271,6 +271,7 @@ Partial Class frm_cadastro_pedidos
         '
         'quantidade
         '
+        Me.quantidade.DataPropertyName = "qtd"
         Me.quantidade.HeaderText = "Qtd"
         Me.quantidade.Name = "quantidade"
         Me.quantidade.ReadOnly = True
@@ -286,6 +287,7 @@ Partial Class frm_cadastro_pedidos
         '
         'subtotal
         '
+        Me.subtotal.DataPropertyName = "subtotal"
         Me.subtotal.HeaderText = "Subtotal"
         Me.subtotal.Name = "subtotal"
         Me.subtotal.ReadOnly = True
@@ -304,12 +306,12 @@ Partial Class frm_cadastro_pedidos
         Me.lb_total.AccessibleDescription = ""
         Me.lb_total.AutoSize = True
         Me.lb_total.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_total.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lb_total.Location = New System.Drawing.Point(602, 494)
+        Me.lb_total.ForeColor = System.Drawing.Color.Navy
+        Me.lb_total.Location = New System.Drawing.Point(533, 494)
         Me.lb_total.Name = "lb_total"
-        Me.lb_total.Size = New System.Drawing.Size(65, 24)
+        Me.lb_total.Size = New System.Drawing.Size(85, 24)
         Me.lb_total.TabIndex = 8
-        Me.lb_total.Text = "00.00"
+        Me.lb_total.Text = "R$ 0,00"
         '
         'btn_add_empresa
         '
@@ -330,7 +332,7 @@ Partial Class frm_cadastro_pedidos
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Navy
-        Me.Label2.Location = New System.Drawing.Point(504, 494)
+        Me.Label2.Location = New System.Drawing.Point(471, 494)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(68, 24)
         Me.Label2.TabIndex = 7
